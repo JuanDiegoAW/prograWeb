@@ -4,11 +4,14 @@
   "description": "",
   "main": "gulpfile.js",
   "dependencies": {
+    "color-convert": "^2.0.1",
     "gulp": "^4.0.2",
     "gulp-sass": "^4.1.0",
     "node-sass": "^4.14.1"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "browser-sync": "^2.26.12"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

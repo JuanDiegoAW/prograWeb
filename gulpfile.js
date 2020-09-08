@@ -1,9 +1,11 @@
-const { src, dest, series, parallel } = require('gulp');
+const { src, dest, series, parallel, watch } = require('gulp');
 const sass = require('gulp-sass'); 
+const browserSync = require('browser-sync');
 
 //constantes de trabajo
 const files = {
-    scssPath: 'src/scss/**/*.scss'
+    scssPath: 'src/scss/**/*.scss',
+    htmlPath: 'dist/**/*.html'
 }
 
 function helloWorldTask(done) {
@@ -17,5 +19,25 @@ function scssTask(d) {
         .pipe(dest('dist/css'));
 }   
 
-exports.default = helloWorldTask;
-exports.css = series(helloWorldTask,scssTask);
+function watchTask() {
+    watch(
+        [files.scssPath, files.htmlPath],
+        series(scssTask, reloadTask)
+    )
+}
+
+function serveTask(done) {
+    browserSync.init({
+        server: {
+            baseDir: './dist/'
+        }
+    })
+    done();
+}
+
+function reloadTask(done) {
+    browserSync.reload();
+    done();
+}
+
+exports.default = series(scssTask, serveTask, watchTask);
