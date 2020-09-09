@@ -1,4 +1,8 @@
 @import "variables";
 @import "normalize";
 @import "skeleton";
-@import "lab";
+@import "lab"; 
+
+body {
+    background-color: $gray;
+}
