@@ -1,0 +1,37 @@
+h2, h3 {
+    font-family: $styled-font;
+    color: $main-dark;
+}
+
+.text-center {
+    text-align: center;
+}
+
+section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.banner-principal {
+    background-color: $main-dark;
+    height: 400px;
+}
+
+#portafolio{
+    background-color:$contrast-dark;
+
+    .row {
+        margin-bottom: 25px;
+    }
+    .item-portafolio {
+        background: $white;
+        p {
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+    }
+    img {
+        max-width: 100%;
+        max-height: 100%;
+    }   
+}
