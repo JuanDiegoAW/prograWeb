@@ -1,6 +1,8 @@
-h2, h3 {
+h2, h3, h4, h5 {
     font-family: $styled-font;
     color: $main-dark;
+    padding-bottom: 0;
+    margin-bottom: 0;   
 }
 
 .text-center {
@@ -15,6 +17,21 @@ section {
 .banner-principal {
     background-color: $main-dark;
     height: 400px;
+}
+
+.imagen-circular {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: inline-block;
+    position: relative;
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 50%;
+    img {
+        width: auto;
+        height: 100%;
+    }
 }
 
 #portafolio{
@@ -36,36 +53,62 @@ section {
     }   
 }
 
-footer {
-    padding: 30px;
-
-    .social-links {
-        a {
-            background: $main-dark;
-            border-radius: 50%;
-            color: $white;
-            display: inline-block;
-            text-decoration: none;
-            padding: 10px;
-            width: 22px;
-
-            transition: all 0.3s linear;
-
-            &:hover {
-                background: $contrast-dark;
-            }
+#nuestro-equipo{
+    background-color: $contrast-dark;
+    .row {
+        margin-bottom: 25px;
+    }
+    .item-portafolio {
+        background: $white;
+        border-radius: 10%;
+        p {
+            padding-left: 15px;
+            padding-right: 15px;
         }
     }
+    img {
+        max-width: 100%;
+        max-height: 100%;
+    }   
+    h5 {
+        font-size: small;
+    }
+}
 
+footer {
+    padding: 30px;
     .footer-links {
         text-align: right;
-
         a {
             color: $contrast-dark;
             display: block;
             margin-left: 15px;
             text-decoration: none;
             float: right;
+        }
+    }
+}
+
+#equipo-header {
+    margin-top: 30px;
+    background-color:$white;
+}
+
+.social-links {
+    margin-bottom: 20px;
+    a {
+        background: $main-dark;
+        color: $white; 
+        border-radius: 50%;
+        display: inline-block;
+        text-decoration: none;
+        padding: 17px;
+        margin-left: 8px;
+        margin-right: 8px;
+        transition: all 0.3s linear;
+
+        &:hover {
+            background: $contrast-dark;
         }
     }
 }
