@@ -35,3 +35,37 @@ section {
         max-height: 100%;
     }   
 }
+
+footer {
+    padding: 30px;
+
+    .social-links {
+        a {
+            background: $main-dark;
+            border-radius: 50%;
+            color: $white;
+            display: inline-block;
+            text-decoration: none;
+            padding: 10px;
+            width: 22px;
+
+            transition: all 0.3s linear;
+
+            &:hover {
+                background: $contrast-dark;
+            }
+        }
+    }
+
+    .footer-links {
+        text-align: right;
+
+        a {
+            color: $contrast-dark;
+            display: block;
+            margin-left: 15px;
+            text-decoration: none;
+            float: right;
+        }
+    }
+}
