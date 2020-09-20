@@ -53,7 +53,7 @@ section {
     }   
 }
 
-#nuestro-equipo{
+#seccion-equipo{
     background-color: $contrast-dark;
     .row {
         margin-bottom: 25px;
@@ -71,7 +71,29 @@ section {
         max-height: 100%;
     }   
     h5 {
-        font-size: small;
+        font-size: 20px;
+    }
+}
+
+#seccion-clientes{
+    background-color: $main-dark;
+    .row {
+        margin-bottom: 25px;
+    }
+    .item-portafolio {
+        background: $main-dark;
+        border-radius: 10%;
+        p {
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+    }
+    img {
+        max-width: 100%;
+        max-height: 100%;
+    }   
+    h5 {
+        font-size: 20px;
     }
 }
 
@@ -92,6 +114,22 @@ footer {
 #equipo-header {
     margin-top: 30px;
     background-color:$white;
+}
+
+#clientes-header {
+    background-color:$main-dark;  
+    color: $white;
+    h2, h3, h4, h5 {
+        color: $white; 
+    }
+    p {
+        margin-bottom: 0;
+    }
+}
+
+.texto-clientes {
+    background-color: $contrast-dark;
+    color: $white;
 }
 
 .social-links {
