@@ -19,6 +19,52 @@ section {
     height: 400px;
 }
 
+header {
+    background-image: url('https://dp-cdn.multiscreensite.com/d_gallery/Computer-Work-Mac_1957_1280_d.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 400px;
+    position: none;
+    border-bottom: 2px solid $contrast-dark;
+
+    div {
+        background-color: rgba(0, 0, 0, 0.5);
+        color: $white;
+        padding: 45px;
+        position: relative;
+        width: 100%;
+    }
+}
+
+nav {
+    ul {
+        background-color: $main-dark;
+        border-bottom: 1px solid $contrast-dark;
+        margin: 0;
+        text-align: center;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 10;
+
+        li {
+            display: inline-block;
+            list-style: none;
+            margin: 15px;
+            a {
+                color: $white;
+                text-decoration: none;
+                text-transform: uppercase;
+
+                &:hover{
+                    color: $contrast-dark;
+                }
+            }
+        }
+    }
+}
+
 .imagen-circular {
     margin-top: 20px;
     margin-bottom: 20px;
@@ -54,7 +100,11 @@ section {
 }
 
 #seccion-equipo{
-    background-color: $contrast-dark;
+    background-color: $light;
+    h3 {
+        font-size: 25px;
+        color: $white;
+    }
     .row {
         margin-bottom: 25px;
     }
@@ -76,12 +126,12 @@ section {
 }
 
 #seccion-clientes{
-    background-color: $main-dark;
+    background-color: $white;
     .row {
         margin-bottom: 25px;
     }
     .item-portafolio {
-        background: $main-dark;
+        background: $white;
         border-radius: 10%;
         p {
             padding-left: 15px;
@@ -99,10 +149,12 @@ section {
 
 footer {
     padding: 30px;
+    background-color: $main-dark;
+    color: $white;
     .footer-links {
         text-align: right;
         a {
-            color: $contrast-dark;
+            color: $white;
             display: block;
             margin-left: 15px;
             text-decoration: none;
@@ -117,11 +169,8 @@ footer {
 }
 
 #clientes-header {
-    background-color:$main-dark;  
-    color: $white;
-    h2, h3, h4, h5 {
-        color: $white; 
-    }
+    background-color:$white;  
+    color: $main-dark;
     p {
         margin-bottom: 0;
     }
@@ -135,8 +184,8 @@ footer {
 .social-links {
     margin-bottom: 20px;
     a {
-        background: $main-dark;
-        color: $white; 
+        background: $contrast-dark;
+        color: $main-dark; 
         border-radius: 50%;
         display: inline-block;
         text-decoration: none;
@@ -146,7 +195,14 @@ footer {
         transition: all 0.3s linear;
 
         &:hover {
-            background: $contrast-dark;
+            background: $contrast-light;
         }
+    }
+}
+
+.social-links-new-font {
+    a {
+        background-color: $light;
+        color: $white;
     }
 }
