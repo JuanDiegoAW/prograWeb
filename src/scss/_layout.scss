@@ -2,6 +2,7 @@
 $font-color: #2F2322;
 $main-color: #212529;
 $secondary: #665e5e;
+$terciary: #c5bcbc;
 $contrast: #fff;
 
 $default-padding: 30px;
@@ -61,11 +62,10 @@ $default-padding: 30px;
     margin-right: 20px;
     margin-bottom: 60px;
     border: 1px solid $main-color;
-    color: $secondary;
-    background-color: $contrast;
+    color: $contrast;
+    background-color: $secondary;
     transition: 0.3s;
     &:hover{
-        color: $contrast;
-        background-color: $secondary;
+        background-color: $terciary;
     }
 }
