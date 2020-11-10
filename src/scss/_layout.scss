@@ -1,208 +1,71 @@
-h2, h3, h4, h5 {
-    font-family: $styled-font;
-    color: $main-dark;
-    padding-bottom: 0;
-    margin-bottom: 0;   
+
+$font-color: #2F2322;
+$main-color: #212529;
+$secondary: #665e5e;
+$contrast: #fff;
+
+$default-padding: 30px;
+
+.image-container {
+    height: 350px;
+    width: 100%;
+    img {
+        display: block;
+        object-fit: cover;
+        height: 100%;
+        width: 100%;
+    }
 }
 
-.text-center {
+#subtitle {
+    width: 100%;
+    padding-left: $default-padding;
+    padding-right: $default-padding;
+    margin: auto;
+    margin-top: 15px;
+    color: $font-color;
     text-align: center;
 }
 
-section {
-    padding-top: 60px;
-    padding-bottom: 60px;
-}
-
-.banner-principal {
-    background-color: $main-dark;
-    height: 400px;
-}
-
-header {
-    background-image: url('https://dp-cdn.multiscreensite.com/d_gallery/Computer-Work-Mac_1957_1280_d.jpg');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    height: 400px;
-    position: none;
-    border-bottom: 2px solid $contrast-dark;
-
-    div {
-        background-color: rgba(0, 0, 0, 0.5);
-        color: $white;
-        padding: 45px;
-        position: relative;
-        width: 100%;
-    }
-}
-
-nav {
-    ul {
-        background-color: $main-dark;
-        border-bottom: 1px solid $contrast-dark;
-        margin: 0;
-        text-align: center;
-        position: fixed;
-        top: 0;
-        width: 100%;
-        z-index: 10;
-
-        li {
-            display: inline-block;
-            list-style: none;
-            margin: 15px;
-            a {
-                color: $white;
-                text-decoration: none;
-                text-transform: uppercase;
-
-                &:hover{
-                    color: $contrast-dark;
-                }
-            }
-        }
-    }
-}
-
-.imagen-circular {
-    margin-top: 20px;
-    margin-bottom: 20px;
-    display: inline-block;
-    position: relative;
-    width: 200px;
-    height: 200px;
-    overflow: hidden;
-    border-radius: 50%;
-    img {
-        width: auto;
-        height: 100%;
-    }
-}
-
-#portafolio{
-    background-color:$contrast-dark;
-
-    .row {
-        margin-bottom: 25px;
-    }
-    .item-portafolio {
-        background: $white;
-        p {
-            padding-left: 15px;
-            padding-right: 15px;
-        }
-    }
-    img {
-        max-width: 100%;
-        max-height: 100%;
-    }   
-}
-
-#seccion-equipo{
-    background-color: $light;
-    h3 {
-        font-size: 25px;
-        color: $white;
-    }
-    .row {
-        margin-bottom: 25px;
-    }
-    .item-portafolio {
-        background: $white;
-        border-radius: 10%;
-        p {
-            padding-left: 15px;
-            padding-right: 15px;
-        }
-    }
-    img {
-        max-width: 100%;
-        max-height: 100%;
-    }   
-    h5 {
-        font-size: 20px;
-    }
-}
-
-#seccion-clientes{
-    background-color: $white;
-    .row {
-        margin-bottom: 25px;
-    }
-    .item-portafolio {
-        background: $white;
-        border-radius: 10%;
-        p {
-            padding-left: 15px;
-            padding-right: 15px;
-        }
-    }
-    img {
-        max-width: 100%;
-        max-height: 100%;
-    }   
-    h5 {
-        font-size: 20px;
-    }
-}
-
-footer {
-    padding: 30px;
-    background-color: $main-dark;
-    color: $white;
-    .footer-links {
-        text-align: right;
-        a {
-            color: $white;
-            display: block;
-            margin-left: 15px;
-            text-decoration: none;
-            float: right;
-        }
-    }
-}
-
-#equipo-header {
+#content-section {
     margin-top: 30px;
-    background-color:$white;
+    padding-top: 20px;
+    padding-left: $default-padding;
+    padding-right: $default-padding;
 }
 
-#clientes-header {
-    background-color:$white;  
-    color: $main-dark;
-    p {
-        margin-bottom: 0;
-    }
+#sub-title{
+    color: $font-color;
+    text-align: center;
 }
 
-.texto-clientes {
-    background-color: $contrast-dark;
-    color: $white;
+.container-fluid {
+    padding-right: 0%;
+    padding-left: 0%;
 }
 
-.social-links {
+.default-input {
     margin-bottom: 20px;
-    a {
-        background: $contrast-dark;
-        color: $main-dark; 
-        border-radius: 50%;
-        display: inline-block;
-        text-decoration: none;
-        padding: 17px;
-        margin-left: 8px;
-        margin-right: 8px;
-        transition: all 0.3s linear;
-
-        &:hover {
-            background: $contrast-light;
-        }
-    }
+    border: 1px solid $main-color;
 }
 
-.social-links-new-font {
-    a {
-        background-color: $light;
-        color: $white;
+.form-control {
+    border: 1px solid $main-color;
+    margin-bottom: 20px;
+    font-size: 12px;
+}
+
+.custom-button {
+    text-align: center;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 60px;
+    border: 1px solid $main-color;
+    color: $secondary;
+    background-color: $contrast;
+    transition: 0.3s;
+    &:hover{
+        color: $contrast;
+        background-color: $secondary;
     }
 }
